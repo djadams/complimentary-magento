@@ -429,6 +429,45 @@ $j(document).ready(function($) {
   }
 
 
+  // Lookbook Pop-up
+
+  if ($j('html').hasClass('no-touch') || $j(window).width() >= 768) {
+
+    $j('.lookbook__product').on('click', function(e){
+      e.preventDefault();
+      var lbProductUrl = $j(this).attr('href');
+      var lbPopup = $j('<div class="lookbook_popup product-view"><span class="lookbook_popup__close">X</span></div>');
+
+      $j('body').append(lbPopup);
+
+      var jqXHR = $j.get(lbProductUrl, function(data){
+        var lbProductDetails = $j(data).find('.product-essential');
+        $j('.lookbook_popup').append(lbProductDetails);
+      });
+
+      jqXHR.done(function(){
+        AmAjaxShoppCartLoad('.btn-cart');
+        $j('.MagicToolboxSelectorsContainer, .sharing-links').remove();
+        $j('<a class="lookbook_popup__more" href="'+ lbProductUrl +'">More Details ></a>').appendTo('.box-related');
+
+        $j('.lookbook_popup__close').on('click', function(){
+          $j('.lookbook_popup').fadeOut(300, function(){
+            $j('.lookbook_popup').remove();
+          });
+        });
+
+        $j('.btn-cart').on('click', function(){
+          $j('.lookbook_popup').delay(1000).fadeOut(300, function(){
+            $j('.lookbook_popup').remove();
+          });
+        });
+      });    
+
+    });
+
+  }
+  
+
 
 
 
