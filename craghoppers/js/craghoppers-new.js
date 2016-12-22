@@ -431,7 +431,8 @@ $j(document).ready(function($) {
 
   // Lookbook Pop-up
 
-  if ($j('html').hasClass('no-touch') || $j(window).width() >= 768) {
+  if ($j('html').hasClass('no-touch') == true || $j(window).width() >= 768) {
+    console.log('dave');
 
     $j('.lookbook__product').on('click', function(e){
       e.preventDefault();
