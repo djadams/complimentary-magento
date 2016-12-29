@@ -4,7 +4,7 @@
 .customer-account h3 {
     text-transform: none;
     font-weight: 400;
-    font-family: 'montserratregular', 'Arial Black', Gadget, Helvetica, Arial, sans-serif;
+    font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .customer-account .block-content li a {
     text-transform: none;
@@ -1098,7 +1098,7 @@ p.customerservice--margin {
 	padding: 30px 20px 0;
 	background-color: #e7e6e4;
 	margin: 0;
-	font-family: 'montserratregular',Helvetica, Arial, sans-serif;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 32px;
 }
 
@@ -1281,7 +1281,7 @@ p.customerservice--margin {
 
 .micro-hero__title,
 .micro-hero__subtitle {
-	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: 1px;
 	margin: 0;
 	padding: 0;
@@ -2174,7 +2174,7 @@ label[for="billing:use_for_shipping_no"] {
 .category-outlet .old-price .price {
 	color: #999;
 	font-size: 12px;
-	font-family: 'montserratregular', sans-serif;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .category-outlet .price-box .old-price .price-label {
@@ -3619,11 +3619,11 @@ Uncomment this if monetate experiment wins and its needed.
 }
 
 .kitGuideResultsIntro h1 span {
-	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .kitGuideResultsIntro p {
-	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-bottom: 0;
 }
 
@@ -4933,7 +4933,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	display: inline-block;
 	position: relative;
 	float: right;
-	font-family: 'montserratregular';
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding: 6px;
 	top: -6px;
 }
@@ -4962,7 +4962,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	display: inline-block;
 	padding: 6px 0;
 	width: 48%;
-	font-family: 'montserratregular';
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: #ccc;
 	text-align: center;
 	margin: 12px 4% 12px 0;
@@ -5010,29 +5010,119 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	max-width: 1228px;
 }
 
+.pageSection--pageTop {
+	text-align: center;
+}
+
+.pageSection--pageTop h2 {
+	color: #666 !important;
+	font-family: Georgia, Times, serif;
+	text-transform: none;
+	font-size: 2.4em;
+	font-weight: 400;
+	margin-bottom: 1.2em;
+}
+
+.pageSection--pageTop h2 span {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+
+.pageSection--pageTop p,
+.lookbook p {
+	color: #666;
+	font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
 .lookbook {
 	width: 100%;
 	max-width: 100%;
 	float: left;
+	padding: 0 6%;
+}
+
+.lookbook h3 {
+	font-family: Georgia, Times, serif;
+	color: #666;
+	text-transform: none;
+	font-size: 2em;
 }
 
 .lookbook--upper {
-	margin-bottom: 0;
+	margin: 4% 0 0;	
 	background: #fff;
-	background: -moz-linear-gradient(top, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
-	background: -webkit-linear-gradient(top, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
-	background: linear-gradient(to bottom, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
+	background: -moz-linear-gradient(top, #fff 0%, #fff 54%, #ddd 54%, #ddd 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #fff 54%, #ddd 54%, #ddd 100%);
+	background: linear-gradient(to bottom, #fff 0%, #fff 54%, #ddd 54%, #ddd 100%);
 }
+
+.lookbook--lower {
+	margin: 0 0 4%;	
+	background: #fff;
+	background: -moz-linear-gradient(bottom, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
+	background: -webkit-linear-gradient(bottom, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
+	background: linear-gradient(to top, #fff 0%, #fff 50%, #ddd 50%, #ddd 100%);
+}
+
+.lookbook--tech {
+	background: #fff;
+	background-image: -moz-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -moz-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
+	background-image: -webkit-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -webkit-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
+	background-image: linear-gradient(to right, #fff 0%, #fff 33%, transparent 33%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
+}
+
+.lookbook__endcap {
+	padding-top: 3vw;
+}
+
 
 .pageSection__narrowContainer {
 	max-width: 1000px;
 	margin: 0 auto;
+	position: relative;
 }
 
-.lookbook__atmos,
-.lookbook__model {
+.lookbook__atmos {
 	position: relative;
 	float: left;
+	margin: 25% 0 8%;
+	max-width: 63% !important;
+}
+
+.lookbook__model {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 44%;
+}
+
+.lookbook__model:hover .bannerOverlay--isHover {
+	display: block;
+}
+
+.lookbook__model .lookbook__product {
+	width: 33px;
+	height: 33px;
+}
+
+.lookbook__model--tech {
+	position: relative;
+	float: right;
+	padding-bottom: 8%;
+}
+
+.lookbook__techBlurb {
+	float: left;
+	max-width: 46%;
+	padding-top: 24%;	
+}
+
+.lookbook__techBlurb p {
+	margin: 10% 0 0;
 }
 
 .lookbook__product {
@@ -5056,6 +5146,41 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	padding: 6px 10px;
 	border: 1px #fff solid;
 	line-height: 1;
+}
+
+.lookbook__plus:hover {
+	background: rgba(66,66,66,.4);
+}
+
+.lookbook__plus--blouse {
+	top: 32%;
+	left: 48%;
+}
+
+.lookbook__plus--jacket {
+	top: 52%;
+	left: 25%;
+}
+
+.lookbook__plus--trousers {
+	top: 80%;
+	left: 56%;
+}
+
+.lookbook__plus--scarf {
+	top: 43%;
+	left: 58%;
+}
+
+.lookbook .bannerOverlay__cta {
+	float: right;
+	margin: 0 0 2vw 0;
+	border: 1px #666 solid;
+	color: #666;
+}
+
+.lookbook .bannerOverlay__cta:hover {
+	color: #fff;
 }
 
 .lookbook_popup {
@@ -5156,5 +5281,5 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	float: right;
 	clear: both;
 	text-decoration: underline;
-	font-family: 'montserratregular';
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
