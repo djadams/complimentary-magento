@@ -5012,6 +5012,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 .pageSection--pageTop {
 	text-align: center;
+	padding: 0 3%;
 }
 
 .pageSection--pageTop h2 {
@@ -5136,6 +5137,12 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	margin-right: 1%;
 	max-width: 275px;
 	width: 25%;
+	background-color: #fff;
+}
+
+
+.lookbook__product img:hover {
+	opacity: .9;
 }
 
 .lookbook__plus {
