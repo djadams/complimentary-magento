@@ -1327,7 +1327,7 @@ p.customerservice--margin {
 	}
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
 
 	.micro-hero__title--facts span {
 		font-size: 42px;
@@ -2318,8 +2318,12 @@ label[for="billing:use_for_shipping_no"] {
     padding-top: 6vw;
 }
 
+.pageBanner--mobile {
+	display: none;
+}
 
-@media screen and (max-width: 680px) {
+
+@media screen and (max-width: 740px) {
 
     .bannerOverlay__contentArea--slider {
         padding: 0;
@@ -2327,7 +2331,7 @@ label[for="billing:use_for_shipping_no"] {
     
     .pageSection--thirds .pageBanner,
     .pageSection--halves .pageBanner {
-        width: 100%;
+        width: 49.5%;
         margin: 0;
         max-height: 440px;
         overflow: hidden;
@@ -2342,6 +2346,26 @@ label[for="billing:use_for_shipping_no"] {
     .pageSection--halves .pageBanner:first-child {
         margin-bottom: 6% !important;
     }
+
+    .pageSection--thirds .pageBanner:nth-child(odd) {
+    	margin-right: .5%;
+    }
+
+    .pageSection--thirds .pageBanner:nth-child(even) {
+    	margin-left: .5%;
+    }
+
+    .pageBanner--mobile {
+		display: block;
+	}
+
+	.pageBanner--desktop {
+		display: none;
+	}
+
+	.pageSection--community .pageBanner--mobile {
+		width: 100%;
+	}
 
     .fullWidthSlider__slidesList .bannerOverlay__cta--slider,
     .pageSection--homeCategories .bannerOverlay__cta {
@@ -2412,8 +2436,12 @@ ul.fullWidthSlider__slidesList { /* need element selector here due to overly spe
 
 @media screen and (max-width: 480px) {
 
-    .fullWidthSlider__slidesList--singleSlide .bannerOverlay__cta--slider {
-        width: 280px;
+    .fullWidthSlider__slidesList .bannerOverlay__cta--slider {
+        width: 260px;
+    }
+
+    .pageSection__title {
+    	font-size: 14px;
     }
 }
 
@@ -4700,7 +4728,7 @@ div.form__container div.webforms-success-text {
 }
 
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 740px){
 .fullWidthSlider .pageBanner__image--blackfriday {
     height: 65.8vw;
 }
@@ -4866,7 +4894,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 740px){
 .pageBanner__image--cybermonday {
     height: 65.8vw;
 }
@@ -5002,17 +5030,40 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 /* Lookbook */
 
-.cms-ss17-lookbook .main-container {
+/*.cms-ss17-lookbook .main-container {
 	max-width: 100%;
+}*/
+
+.cms-ss17-lookbook .breadcrumbs {
+	display: none;
 }
 
-.pageSection--ampersand {
-	max-width: 1228px;
+.pageSection {
+	max-width: 1268px;
+	padding: 0 3%;
 }
+
+@media screen and (max-width: 740px) {
+
+	.pageSection {
+		padding: 0 1%;
+	}
+}
+
+.pageSection--fullWidth {
+	padding: 0;
+}
+
+.pageSection--noTitle {
+    padding-top: 6vw;
+}
+
+
 
 .pageSection--pageTop {
 	text-align: center;
 	padding: 0 3%;
+	margin-top: 6%;
 }
 
 .pageSection--pageTop h2 {
@@ -5030,6 +5081,17 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	font-size: 1.4em;
 }
 
+@media screen and (max-width: 420px) {
+
+	.pageSection--pageTop h2 {
+		font-size: 2.2em;
+	}
+
+	.pageSection--pageTop h2 span {
+		font-size: 1.2em;
+	}
+}
+
 .pageSection--pageTop p,
 .lookbook p {
 	color: #666;
@@ -5041,7 +5103,6 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 .lookbook {
 	width: 100%;
-	max-width: 100%;
 	float: left;
 	padding: 0 6%;
 }
@@ -5071,8 +5132,8 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 .lookbook--tech {
 	background: #fff;
-	background-image: -moz-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -moz-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
-	background-image: -webkit-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -webkit-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
+	background-image: -moz-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -moz-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
+	background-image: -webkit-linear-gradient(left, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%), -webkit-linear-gradient(top, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
 	background-image: linear-gradient(to right, #fff 0%, #fff 33%, transparent 33%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 33%, #ddd 33%, #ddd 100%);
 }
 
@@ -5080,26 +5141,36 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	padding-top: 3vw;
 }
 
+.lookbook__endcap .mt_horizontal {
+	float: none;
+}
 
 .pageSection__narrowContainer {
-	max-width: 1000px;
+	max-width: 998px;
 	margin: 0 auto;
 	position: relative;
 }
 
-.lookbook__atmos {
-	position: relative;
-	float: left;
-	margin: 25% 0 8%;
-	max-width: 63% !important;
+.lookbook--upper .pageSection__narrowContainer,
+.lookbook--lower .pageSection__narrowContainer {
+	max-width: 866px;
 }
 
+.lookbook__atmos,
 .lookbook__model {
+	position: relative;
+	float: left;
+	margin: 0 0 8%;
+	width: 50%;
+	max-width: 433px !important;
+}
+
+/*.lookbook__model {
 	position: absolute;
 	top: 0;
 	right: 0;
 	max-width: 44%;
-}
+}*/
 
 .lookbook__model:hover .bannerOverlay--isHover {
 	display: block;
@@ -5123,7 +5194,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 }
 
 .lookbook__techBlurb p {
-	margin: 10% 0 0;
+	margin: 10% 0;
 }
 
 .lookbook__product {
@@ -5184,10 +5255,39 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	margin: 0 0 2vw 0;
 	border: 1px #666 solid;
 	color: #666;
+	padding: 18px 0;
+	width: 49%;
+	text-align: center;
 }
 
 .lookbook .bannerOverlay__cta:hover {
 	color: #fff;
+}
+
+.lookbook__techBlurb .bannerOverlay__cta {
+	float: left;
+	clear: left;
+	width: 100%;
+}
+
+
+.lookbook--additional {
+	margin: 0 0 4%;	
+	background: #fff;
+	background: -moz-linear-gradient(bottom, #fff 0%, #fff 55%, #ddd 55%, #ddd 100%);
+	background: -webkit-linear-gradient(bottom, #fff 0%, #fff 55%, #ddd 55%, #ddd 100%);
+	background: linear-gradient(to top, #fff 0%, #fff 55%, #ddd 55%, #ddd 100%);
+}
+
+.lookbook--additional img {
+	width: 50%;
+	max-width: 517px;
+	margin-top: 5%;
+	float: left;
+}
+
+.lookbook--additional .bannerOverlay__cta {
+	margin-top: 5%;
 }
 
 .lookbook_popup {
@@ -5289,4 +5389,126 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	clear: both;
 	text-decoration: underline;
 	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 740px) {
+
+	.lookbook__product img {
+		width: 36%;
+		margin-bottom: 18px;
+	}
+
+	.lookbook .bannerOverlay__cta {
+		width: 99%;
+		line-height: 1.4;
+	}
+
+	.lookbook--tech {
+		background: #fff;
+		background-image: -moz-linear-gradient(top, #fff 0%, #fff 18%, #ddd 18%, #ddd 100%);
+		background-image: -webkit-linear-gradient(top, #fff 0%, #fff 18%, #ddd 18%, #ddd 100%);
+		background-image: linear-gradient(to bottom, #fff 0%, #fff 18%, #ddd 18%, #ddd 100%);
+	}
+
+	.lookbook__model--tech {
+		display: none;
+	}
+
+	.lookbook__techBlurb {
+		max-width: 100%;
+		padding-top: 6%;
+	}
+
+	.lookbook__techBlurb p {
+		margin: 8% 0;
+	}
+
+	.lookbook__techBlurb .bannerOverlay__cta {
+		margin-bottom: 8%;
+	}
+
+	.lookbook--additional {
+		background: #fff;
+	}
+
+	.lookbook--additional img {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+/* Overwrites of breakpoint from craghoppers-new.css file in prep for replatform */
+
+@media screen and (max-width: 740px) {
+
+	.bannerOverlay__cta {
+		font-size: 1em;
+	}
+
+	.bannerOverlay__title--slider {
+		font-size: 4.4vw;
+		letter-spacing: 3px;
+	}
+
+	.bannerOverlay__title--slider span {
+		font-size: 3.4vw;
+	}
+
+	.bannerOverlay__subTitle--slider {
+		font-size: 2.8vw;
+		margin-top: 1vw;
+	}
+
+	.bannerOverlay__text--slider {
+		font-size: 14px;
+	}
+
+	.bannerOverlay__contentArea--slider {
+		vertical-align: middle;
+	}
+
+	.bannerOverlay__contentArea--ctaOnly {
+		padding-bottom: 5%;
+	}
+
+	.bannerOverlay__cta--slider {
+		width: 80%;
+	}
+
+	.fullWidthSlider__textOverlay--notOnMobile {
+		display: none;
+	}
+
+	.bannerOverlay__title--highlights {
+		font-size: 3vw;
+	}
+
+	.bannerOverlay__subTitle--highlights {
+		font-size: 14px;
+	}
+
+	.bannerOverlay__cta--black.long {
+		font-size: 18px; 
+		padding: 12px 8vw; 
+		margin-left: 0;
+	}
+
+	.bannerOverlay__cta--black {
+		display: none;
+	}
+
+
+	.u-flex-container {
+		flex-direction: column;
+	}
+
+	.pageBanner--blog,
+	.pageTextBlock--blog {
+		-webkit-box-flex: 1 0 96%;
+		-moz-box-flex:  1 0 96%;
+		-webkit-flex:  1 0 96%;
+		-ms-flex:  1 0 96%;
+		flex: 1 0 96%;
+	}
 }
