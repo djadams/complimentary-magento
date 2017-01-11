@@ -5039,7 +5039,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 }
 
 .pageSection {
-	max-width: 1268px;
+	max-width: 1228px;
 	padding: 0 3%;
 }
 
@@ -5063,7 +5063,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .pageSection--pageTop {
 	text-align: center;
 	padding: 0 3%;
-	margin-top: 6%;
+	margin-top: 4%;
 }
 
 .pageSection--pageTop h2 {
@@ -5078,13 +5078,13 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .pageSection--pageTop h2 span {
 	display: block;
 	text-transform: uppercase;
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 
 @media screen and (max-width: 420px) {
 
 	.pageSection--pageTop h2 {
-		font-size: 2.2em;
+		font-size: 2em;
 	}
 
 	.pageSection--pageTop h2 span {
@@ -5096,7 +5096,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .lookbook p {
 	color: #666;
 	font-family: 'montserratlight', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 400;
 	line-height: 1.6;
 }
@@ -5156,13 +5156,12 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	max-width: 866px;
 }
 
-.lookbook__atmos,
-.lookbook__model {
+.lookbook__atmos {
 	position: relative;
 	float: left;
 	margin: 0 0 8%;
-	width: 50%;
-	max-width: 433px !important;
+	width: 100%;
+	max-width: 863px !important;
 }
 
 /*.lookbook__model {
@@ -5172,19 +5171,20 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	max-width: 44%;
 }*/
 
-.lookbook__model:hover .bannerOverlay--isHover {
+.lookbook__atmos:hover .bannerOverlay--isHover {
 	display: block;
 }
 
-.lookbook__model .lookbook__product {
+.lookbook__atmos .lookbook__product {
 	width: 33px;
 	height: 33px;
 }
 
-.lookbook__model--tech {
+.lookbook__atmos--tech {
 	position: relative;
 	float: right;
 	padding-bottom: 8%;
+	width: 50%;
 }
 
 .lookbook__techBlurb {
@@ -5251,7 +5251,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 }
 
 .lookbook .bannerOverlay__cta {
-	float: right;
+	float: left;
 	margin: 0 0 2vw 0;
 	border: 1px #666 solid;
 	color: #666;
@@ -5288,6 +5288,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 .lookbook--additional .bannerOverlay__cta {
 	margin-top: 5%;
+	float: right;
 }
 
 .lookbook_popup {
@@ -5393,6 +5394,13 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 @media screen and (max-width: 740px) {
 
+	.lookbook--lower {
+		background: #fff;
+		background: -moz-linear-gradient(bottom, #fff 0%, #fff 25%, #ddd 25%, #ddd 100%);
+		background: -webkit-linear-gradient(bottom, #fff 0%, #fff 25%, #ddd 25%, #ddd 100%);
+		background: linear-gradient(to top, #fff 0%, #fff 25%, #ddd 25%, #ddd 100%);
+	}
+
 	.lookbook__product img {
 		width: 36%;
 		margin-bottom: 18px;
@@ -5410,7 +5418,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 		background-image: linear-gradient(to bottom, #fff 0%, #fff 18%, #ddd 18%, #ddd 100%);
 	}
 
-	.lookbook__model--tech {
+	.lookbook__atmos--tech {
 		display: none;
 	}
 
@@ -5439,6 +5447,11 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 
 /* Overwrites of breakpoint from craghoppers-new.css file in prep for replatform */
+
+.wrapper {
+	width: 100%;
+	max-width: 1228px;
+}
 
 @media screen and (max-width: 740px) {
 
