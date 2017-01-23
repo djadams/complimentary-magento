@@ -462,6 +462,7 @@ li.main-cat {
 li.sub-cat {
 	font-size: 12px;
 	margin-bottom: 3px;
+	text-transform: none;
 }
 
 .smoothcontent {
@@ -5028,13 +5029,38 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	width: 100%;
 }
 
+#header .logo img {
+	display: none;
+}
+
+#header .logo {
+	background: url('//d1khwdv4lze0nb.cloudfront.net/images/SS17/MoufLogo-2.gif') no-repeat;
+	background-size: contain;
+}
+
+@media only screen and (min-width: 771px) {
+
+	#header .logo {
+		min-height: 102px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+
+	#header .logo {
+		background-size: 110%;
+		background-position: 0 0;
+	}
+}
+
+
 /* Lookbook */
 
 /*.cms-ss17-lookbook .main-container {
 	max-width: 100%;
 }*/
 
-.cms-ss17-lookbook .breadcrumbs {
+body[class*="cms-lookbook"] .breadcrumbs {
 	display: none;
 }
 
@@ -5066,6 +5092,10 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	margin-top: 4%;
 }
 
+.pageSection--pageTopJustHeading {
+	margin-bottom: 0;
+}
+
 .pageSection--pageTop h2 {
 	color: #666 !important;
 	font-family: Georgia, Times, serif;
@@ -5092,6 +5122,10 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	}
 }
 
+h2.pageSection--pageTop__justHeading {
+	margin-bottom: 0;
+}
+
 .pageSection--pageTop p,
 .lookbook p {
 	color: #666;
@@ -5112,6 +5146,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	color: #666;
 	text-transform: none;
 	font-size: 2em;
+	z-index: 20;
 }
 
 .lookbook--upper {
@@ -5190,7 +5225,7 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .lookbook__techBlurb {
 	float: left;
 	max-width: 46%;
-	padding-top: 24%;	
+	padding-top: 24%;
 }
 
 .lookbook__techBlurb p {
@@ -5204,16 +5239,29 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 }
 
 .lookbook__product img {
+	position: relative;
 	float: left;
 	margin-right: 1%;
 	max-width: 275px;
 	width: 25%;
 	background-color: #fff;
+	z-index: 20;
 }
 
 
 .lookbook__product img:hover {
 	opacity: .9;
+}
+
+.lookbook__product--kids {
+	float: left;
+	width: 25%;
+	margin-right: 1%;
+	max-width: 275px;
+}
+
+.lookbook__product--kids img {
+	width: 100% !important;
 }
 
 .lookbook__plus {
@@ -5229,6 +5277,8 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .lookbook__plus:hover {
 	background: rgba(66,66,66,.4);
 }
+
+/* test pluses */
 
 .lookbook__plus--blouse {
 	top: 32%;
@@ -5248,6 +5298,18 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .lookbook__plus--scarf {
 	top: 43%;
 	left: 58%;
+}
+
+/* ///// */
+
+.lookbook__plus--kidsTop {
+	top: 18%;
+	left: 62%;
+}
+
+.lookbook__plus--kidsJacket {
+	top: 34%;
+	left: 59%;
 }
 
 .lookbook .bannerOverlay__cta {
@@ -5270,6 +5332,23 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	width: 100%;
 }
 
+.lookbook__product--kids .bannerOverlay__cta,
+.lookbook--kids .bannerOverlay__cta {
+	width: 99%;
+	background: #68AB9D;
+	border: none;
+	color: #fff;
+}
+
+.lookbook--kids .bannerOverlay__cta {
+	background: #D82C44;
+}
+
+.lookbook__product--kids .bannerOverlay__cta:hover,
+.lookbook--kids .bannerOverlay__cta:hover {
+	background: #35364E;
+}
+
 
 .lookbook--additional {
 	margin: 0 0 4%;	
@@ -5289,6 +5368,34 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .lookbook--additional .bannerOverlay__cta {
 	margin-top: 5%;
 	float: right;
+}
+
+.lookbook_decoration {
+	position: absolute;
+	max-width: 237px !important;
+	z-index: 10;
+}
+
+.lookbook_decoration--rain {
+	top: 0;
+	left: -12%;
+	margin-top: -5%;
+}
+
+.lookbook_decoration--rainbow {
+	bottom: 0;
+	right: -10%;
+}
+
+.lookbook_decoration--rain2 {
+	bottom: 0;
+	right: -5%;
+}
+
+.lookbook_decoration--sunshine {
+	top: 0;
+	left: -15%;
+	margin-top: -10%;
 }
 
 .lookbook_popup {
@@ -5405,9 +5512,33 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	padding: 0 0 0 2%;
 }
 
+.mmLookbookColumn--links p {
+	margin-bottom: 0;
+}
+
 .mmLookbookColumn li {
-	margin: 3px 0;
-	padding-bottom: 6px;
+	padding: 4px 156px 4px 0;
+	margin: 4px 0;
+	position: relative;
+	display: inline-block;
+	float: left;
+	clear: left;
+}
+
+.mmLookbookColumn li:hover {
+	background: #f1f1f1;
+}
+
+.mmLookbookColumn li li {
+	padding: 0 0 0 12px;
+	display: inline;
+	float: none;
+	clear: none;
+	background: none;
+}
+
+.mmLookbookColumn li li:hover {
+	background: none;
 }
 
 .mmLookbookColumn img {
@@ -5424,6 +5555,51 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	letter-spacing: .5px;
 }
 
+.trouserGuide__diagram {
+	width: 40%;
+	float: left;
+	margin-right: 2%;
+}
+
+.trouserGuide__diagram h3 {
+	border-bottom: 5px orange solid;
+	color: orange;
+}
+
+.trouserGuide__image {
+	width: 58%;
+	float: left;
+}
+
+.trouserGuide p {
+	clear: left;
+	margin: 2% 0;
+	float: left;
+}
+
+.trouserGuide .bannerOverlay__cta {
+	width: 48%;
+	background-color: orange;
+	border: none;
+	color: #fff;
+	margin-right: 2%;
+}
+
+
+
+@media screen and (min-width: 771px) {
+
+	.hidden-sub-cat {
+		position: absolute;
+		top: 4px;
+		right: 12px;
+		opacity: 0;
+		/*height: 0;*/
+	}
+
+}
+
+
 @media screen and (max-width: 860px) {
 
 	.mmLookbookColumn {
@@ -5439,6 +5615,25 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	}
 }
 
+@media screen and (max-width: 770px) {
+
+	.mmLookbookColumn li {
+		padding-right: 12px;
+	}
+
+	.hidden-sub-cat {
+		opacity: 1 !important;
+	}
+
+	.mmLookbookColumn:nth-child(3) {
+		display: none;
+	}
+
+	.mmLookbookColumn--links {
+		width: 90%;
+	}
+}
+
 @media screen and (max-width: 740px) {
 
 	.lookbook--lower {
@@ -5451,6 +5646,10 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	.lookbook__product img {
 		width: 36%;
 		margin-bottom: 18px;
+	}
+
+	.lookbook__product--kids {
+		width: 40%;
 	}
 
 	.lookbook .bannerOverlay__cta {
@@ -5489,6 +5688,30 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 	.lookbook--additional img {
 		width: 100%;
 		max-width: 100%;
+	}
+
+	.lookbook_decoration--rain {
+		margin-top: -14%;
+	}
+
+	.lookbook_decoration--rainbow,
+	.lookbook_decoration--rain2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.lookbook_decoration--rain {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 520px) {
+
+	.lookbook__plus--kidsJacket,
+	.lookbook__plus--kidsTop {
+		display: none;
 	}
 }
 
