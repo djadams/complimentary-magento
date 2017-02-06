@@ -4985,6 +4985,10 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 
 /* style for showing quick buy on outlet, online exclusives and accessories */
 .catalog-category-view.categorypath-outlet .quickbuy,
+.catalog-category-view.categorypath-outlet-mens .quickbuy,
+.catalog-category-view.categorypath-outlet-womens .quickbuy,
+.catalog-category-view.categorypath-outlet-kids .quickbuy,
+.catalog-category-view.categorypath-outlet-accessories .quickbuy,
 .catalog-category-view.categorypath-accessories .quickbuy,
 .catalog-category-view.categorypath-online-exclusives .quickbuy {
     display: block !important;
@@ -5086,6 +5090,43 @@ a.bannerOverlay__cta.bannerOverlay__cta--slider.bannerOverlay__cta--slider-cyber
 .feefo-ratings img {
 	width: 100%;
 }
+
+.product-view .no-rating {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+	.video.collateral-block {
+		display: none;
+	}
+}
+
+/* Sale nav color change */
+li#nav-65 a {
+    color: #BE0000;
+}
+/* END */
+
+/* Unsubscribe form styles */
+.successmessage {
+    text-align: center;
+    background: #169416;
+    color: #fff;
+    padding: 2% 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.cms-unsubscribe-form label {
+    min-width: 110px;
+}
+.cms-unsubscribe-form .redeye-form div {
+    line-height: 3;
+}
+.cms-unsubscribe-form .redeye-form div.newsletter {
+    line-height: 1;
+}
+/* END */
 
 #header .logo img {
 	display: none;
