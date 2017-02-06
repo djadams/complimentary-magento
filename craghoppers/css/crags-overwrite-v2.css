@@ -2489,8 +2489,6 @@ ul.fullWidthSlider__slidesList { /* need element selector here due to overly spe
 .pageBanner--horizontalCrop img {
     width: auto;
     position: relative;
-    left: -900px;
-    margin-left: 50%;
 }
 
 @media screen and (max-width: 540px) {
