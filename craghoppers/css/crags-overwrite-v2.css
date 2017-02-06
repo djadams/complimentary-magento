@@ -2495,7 +2495,7 @@ ul.fullWidthSlider__slidesList { /* need element selector here due to overly spe
 
     .pageBanner--horizontalCrop img {
         height: 300px;
-        left: -750px;
+        left: -350px;
     }
 }
 
@@ -2503,7 +2503,6 @@ ul.fullWidthSlider__slidesList { /* need element selector here due to overly spe
 
     .pageBanner--horizontalCrop img {
         height: 280px;
-        left: -700px;
     }
 }
 
@@ -6475,14 +6474,14 @@ div.webforms-success-text {
 .bannerOverlay__title {
 	font-family: Georgia, Times, 'Times New Roman', serif !important;
     font-weight: 400 !important;
-    font-size: 3.4em;
+    font-size: 3.2em;
 }
 
 
 .bannerOverlay__subTitle {
    font-family: Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-size: 1.8em;
+   font-size: 1.5em;
 }
 
 .bannerOverlay__text {
@@ -6498,6 +6497,21 @@ div.webforms-success-text {
 .bannerOverlay__cta {
    font-family: Helvetica, Arial, sans-serif;
    font-weight: 400;
+}
+
+@media screen and (max-width: 560px) {
+
+	.bannerOverlay__title {
+	    font-size: 2.6em;
+	}
+
+	.bannerOverlay__subTitle {
+	   font-size: 1.3em;
+	}
+
+	.bannerOverlay__cta {
+		font-size: .9em;
+	}
 }
 
 .pageTextBlock__text {
